@@ -1,24 +1,28 @@
-<!-- displaying articles -->
+
 {{> post-info post}}
 
-<!-- displaying form and comments-->
-<!-- only display if logged in -->
 {{#if loggedIn}}
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
+  <div class="card-comment">
 
-  <div>
-    <button type="submit">add comment</button>
-    <button type="button" class="upvote-btn">upvote</button>
+    <form id="form-comment">
+      
+      <div class="text-comment">
+        <textarea name="comment-body"></textarea>
+      </div>
+
+      <div class="btns-comment">
+        <button type="submit">Add a comment</button>
+        <button type="button" id="btn-upvote">⬆</button>
+      </div>
+
+    </form>
+
   </div>
-</form>
 {{/if}}
 
 {{> comments post.comments}}
 
 {{#if loggedIn}}
-<script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>
+  <script src="../public/javascript/comment.js"></script>
+  <script src="../public/javascript/upvote.js"></script>
 {{/if}}

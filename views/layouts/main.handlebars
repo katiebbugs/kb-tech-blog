@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just Tech News</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
-<body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">Just Tech News</a>
-      </h1>
-      <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
-    </header>
-    <main>
-      {{{ body }}}
-    </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
-  </div>
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
-</body>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <title>Tech News</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>
+          <a href="/">Tech News</a>
+        </h1>
+        
+        <nav class="nav">
+          <a class="link" href="/">Home</a>
+          {{#if loggedIn}}
+            <a class="link" href="/dashboard">Dashboard</a>
+            <button id="logout">Logout</button>
+          {{else}}
+            <a class="link" href="/login">Login</a>
+          {{/if}}
+        </nav>
+      </header>
+
+      <main class="body">
+        {{{ body }}}
+      </main>
+
+      <footer class="footer">
+        <h3>You've reached the end of the posts!</h3>
+      </footer>
+    </div>
+
+    {{#if loggedIn}}
+      <script src="/javascript/logout.js"></script>
+    {{/if}}
+  </body>
 </html>

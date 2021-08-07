@@ -1,4 +1,5 @@
-async function signupFormHandler(event) {
+// signup
+  async function signupFormHandler(event) {
     event.preventDefault();
   
     const username = document.querySelector('#username-signup').value.trim();
@@ -16,7 +17,6 @@ async function signupFormHandler(event) {
         headers: { 'Content-Type': 'application/json' }
       });
   
-      // check the response status
       if (response.ok) {
         console.log('success');
       } else {
@@ -25,6 +25,7 @@ async function signupFormHandler(event) {
     }
   }
 
+// login
   async function loginFormHandler(event) {
     event.preventDefault();
   
@@ -49,5 +50,5 @@ async function signupFormHandler(event) {
     }
   }
   
-  document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
-  document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+document.querySelector('#form-signup').addEventListener('submit', signupFormHandler);
+document.querySelector('#form-login').addEventListener('submit', loginFormHandler);
