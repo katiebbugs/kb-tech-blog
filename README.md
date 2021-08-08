@@ -33,7 +33,7 @@ Some macOS users might get the error message "Command not found". If that is the
 `exit` or `quit`
 
 5. Seed db
-`npm seed` or `node seeds/index.js`
+`npm run seed` or `node seeds/index.js`
 
 6. Run/start server
 `npm start` or `node server.js`
