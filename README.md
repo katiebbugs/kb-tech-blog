@@ -1,19 +1,18 @@
 # kb-tech-blog
 
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ## Description
 
-A CMS-style blog site, that allows a user to publish articles, blog posts, as well as their own thoughts and opinions.
+A CMS-style blog site, that allows a user to publish tech blog posts, as well as their own thoughts and opinions.
 
 ## Table of Contents
 
-* [Usage](#usage)
+* [Installation](#installation)
+* [Tech](#tech)
 
-## Usage
+## Instructions
 
 Clone repo, navigate to root folder, then run the following commands in your terminal:
 
@@ -37,3 +36,10 @@ Some macOS users might get the error message "Command not found". If that is the
 
 6. Run/start server
 `npm start` or `node server.js`
+
+## Tech
+
+* [Node](https://nodejs.org/en/)
+* [npm](https://www.npmjs.com/)
+* [Express](https://expressjs.com/)
+* [Sequelize](https://sequelize.org/)
