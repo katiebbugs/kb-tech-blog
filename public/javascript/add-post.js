@@ -5,14 +5,14 @@
     const title = document.querySelector('input[name="post-title"]').value;
     console.log(title);
 
-    const post_url = document.querySelector('input[name="post-url"]').value;
-    console.log(post_url);
+    const post_content = document.querySelector('input[name="post-content"]').value;
+    console.log(post_content);
   
     const response = await fetch(`/api/posts`, {
       method: 'POST',
       body: JSON.stringify({
         title,
-        post_url
+        post_content
       }),
       headers: {
         'Content-Type': 'application/json'

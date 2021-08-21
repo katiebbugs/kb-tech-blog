@@ -23,7 +23,7 @@ const withAuth = require('../../utils/auth');
       include: [
         {
           model: Post,
-          attributes: ['id', 'title', 'post_url', 'created_at']
+          attributes: ['id', 'title', 'post_content', 'created_at']
         },
         {
           model: Comment,
